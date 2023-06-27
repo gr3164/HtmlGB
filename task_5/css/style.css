@@ -1,0 +1,385 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+@font-face {
+    font-family: '../fonts/Gilroy';
+    src: url('../fonts/Gilroy-Regular.woff');
+    src: local('../fonts/Gilroy Regular'), local('../fonts/Gilroy-Regular'),
+        url('../fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '../fonts/Gilroy';
+    src: url('../fonts/Gilroy-Medium.woff');
+    src: local('../fonts/Gilroy Medium'), local('../fonts/Gilroy-Medium'),
+        url('../fonts/Gilroy-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '../fonts/Gilroy';
+    src: url('../fonts/Gilroy-SemiBold.woff');
+    src: local('../fonts/Gilroy SemiBold'), local('../fonts/Gilroy-SemiBold'),
+        url('../fonts/Gilroy-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '../fonts/Gilroy';
+    src: url('../fonts/Gilroy-Bold.woff');
+    src: local('../fonts/Gilroy Bold'), local('../fonts/Gilroy-Bold'),
+        url('../fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: '../fonts/Gilroy';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 50px;
+    background: #F25822;
+    min-width: 140px;
+    min-height: 50px;
+    transition: all ease .2s;
+}
+
+.btn:hover {
+    background-color: #d74c1a;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    gap: 20px;
+
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.header__logo-text {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header__logo-text span {
+    color: #F25822;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 36px;
+}
+
+.menu__item {
+    font-size: 14px;
+    font-weight: 600;
+    transition: color ease .2s;
+}
+
+
+.menu__item:hover {
+    color: #F25822;
+}
+
+.icon-arrow:before {
+    content: "\e900";
+    font-size: 7px;
+}
+
+.menu__btn {
+    min-width: 120px;
+    min-height: 40px;
+    border-radius: 30px;
+    white-space: nowrap;
+}
+
+.top__wrapper {
+    padding: 163px 0 100px 0;
+
+}
+
+.top__inner {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 200px;
+}
+
+.top__content {
+    flex: 0 1 44%;
+    margin: 60px 0 0 0;
+}
+
+.top__title {
+    margin: 0 0 15px 0;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.top__title span {
+    position: relative;
+}
+
+.top__title span::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 314px;
+    height: 76px;
+    background: url("../images/elipse.svg") no-repeat;
+
+
+}
+
+.top__text {
+    margin: 0 0 40px 0;
+    color: #888;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.top__buttons {
+    display: flex;
+    gap: 30px;
+}
+
+.buttons-top__start {
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+
+}
+
+.buttons-top__video {
+    position: relative;
+    background-color: #fff;
+    color: #AAA;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 6px 0 6px 45px;
+    transition: color ease .2s;
+    white-space: nowrap;
+}
+
+.buttons-top__video::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: url("../images/play.svg")0 0 no-repeat;
+    transform: translateY(-50%);
+}
+
+.buttons-top__video:hover {
+    color: rgb(121, 121, 121);
+}
+
+.top__img {
+    position: relative;
+    flex: 0 1 44%;
+    padding-bottom: 35%;
+}
+
+.top__img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.brand__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+
+/* offer */
+
+.offer {
+    background-color: #FAFAFA;
+    position: relative;
+    z-index: 1;
+    background: url("../images/offer/bg_01.svg") 0 -160px no-repeat;
+    background-size: cover;
+
+}
+
+.offer__inner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+
+}
+
+.offer__content {
+    flex: 0 0 50%;
+    padding: 20px 0;
+
+}
+
+.offer__title {
+    margin-bottom: 20px;
+    max-width: 515px;
+}
+
+.offer__text {
+    color: #666;
+    margin-bottom: 35px;
+    max-width: 515px;
+}
+
+
+.offer__img {
+    flex: 1 0 50%;
+    align-self: flex-start;
+    position: relative;
+    padding-bottom: 45%;
+}
+
+.offer__img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
