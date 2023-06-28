@@ -337,12 +337,11 @@ a {
 /* offer */
 
 .offer {
-    background-color: #FAFAFA;
     position: relative;
     z-index: 1;
     background: url("../images/offer/bg_01.svg") 0 -160px no-repeat;
     background-size: cover;
-
+    background-color: #FAFAFA;
 }
 
 .offer__inner {
