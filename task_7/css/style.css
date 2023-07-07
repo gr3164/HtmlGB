@@ -447,8 +447,11 @@ body {
 }
 
 @media (max-width:1024px) {
-    .brand__img>img {
+    .brand__img {
         padding-bottom: 51%;
+    }
+
+    .brand__img>img {
         object-position: center;
     }
 
